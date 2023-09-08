@@ -16,8 +16,11 @@ export default function NavBar() {
                 <Navbar.Toggle aria-controls="main-navbar" />
                 <Navbar.Collapse id="main-navbar">
                     <Nav>
-                        <Nav.Link as={Link} href="/static" active={pathname === "/static"} >
+                        <Nav.Link as={Link} href="/static" active={pathname === "/static"}>
                             Static
+                        </Nav.Link>
+                        <Nav.Link as={Link} href="/dynamic" active={pathname === "/dynamic"}>
+                            Dynamic
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
